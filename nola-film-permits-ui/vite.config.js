@@ -4,7 +4,12 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0', // ✅ This is what Render needs
-    port: 8080       // ✅ Matches your start script
+    host: '0.0.0.0',
+    port: 8080
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 8080,
+    allowedHosts: ['nolafilmpermits.onrender.com']  // ✅ add this line
   }
 })
