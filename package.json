@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node server/app.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0"
   }
